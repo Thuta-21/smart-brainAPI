@@ -22,6 +22,7 @@ const db = knex({
 const app = express();
 app.use(express.json());
 app.use(cors());
+
 app.get('/', (req, res) => {
   res.send('it\' working');
 })
@@ -35,6 +36,6 @@ app.get('/profile/:id', (req, res) => handleProfile(req, res, db));
 
 app.put('/image', (req, res) => handleImage(req, res, db))
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log('running on 3000');
 })
