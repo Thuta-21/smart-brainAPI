@@ -11,11 +11,11 @@ import handleClarifai from './controllers/clarifai.js';
 const db = knex({
   client: 'pg',
   connection: {
-    host: '127.0.0.1',
+    host: 'smart-brain-14nn3-postgresql.smart-brain-14nn3.svc.cluster.local',
     port: 5432,
-    user: 'postgres',
-    password: '**05h',
-    database: 'smart-brain',
+    user: 'salmon',
+    password: 'tJ3+eX1=jK8-fK2-gJ0_',
+    database: 'smart-brain'
   },
 });
 
